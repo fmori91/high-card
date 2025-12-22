@@ -2,11 +2,14 @@ package it.sara.demo.exception;
 
 import it.sara.demo.dto.StatusDTO;
 import lombok.Getter;
+import lombok.Setter;
+
 
 @Getter
+@Setter
 public class GenericException extends Exception {
 
-    public final static StatusDTO GENERIC_ERROR = new StatusDTO();
+    public final static StatusDTO GENERIC_ERROR = new StatusDTO("Invalid credentials");
 
     static {
         GENERIC_ERROR.setCode(500);
@@ -24,7 +27,7 @@ public class GenericException extends Exception {
     }
 
     private StatusDTO createStatus(int code, String message) {
-        StatusDTO status = new StatusDTO();
+        StatusDTO status = new StatusDTO("Invalid credentials");
         status.setCode(code);
         status.setMessage(message);
         status.setTraceId(java.util.UUID.randomUUID().toString());

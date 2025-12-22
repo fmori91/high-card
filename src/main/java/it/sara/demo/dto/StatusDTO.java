@@ -1,12 +1,17 @@
 package it.sara.demo.dto;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+
+@Data
 public class StatusDTO {
     private int code;
     private String message;
     private String traceId;
+
+    public StatusDTO() {
+    }
+
+    public StatusDTO(String invalidCredentials) {
+    }
 }
