@@ -73,10 +73,10 @@ public class UserRepository {
         return filtered.subList(from, to);
     }
 
-        // helper per il filtro contains case-insensitive
-        private boolean contains(String s, String q) {
-            return s != null && q != null && !q.isEmpty()
-                    && s.toLowerCase().contains(q);
-        }
+    // helper per il filtro contains case-insensitive
+    private boolean contains(String s, String q) {
+         return s != null && q != null && !q.isEmpty()
+            && s.toLowerCase().contains(q);
+    }
 
 }
