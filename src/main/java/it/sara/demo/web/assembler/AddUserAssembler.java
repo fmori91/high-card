@@ -11,7 +11,7 @@ public class AddUserAssembler {
         CriteriaAddUser returnValue = new CriteriaAddUser();
         returnValue.setEmail(addUserRequest.getEmail());
         returnValue.setFirstName(addUserRequest.getFirstName());
-        returnValue.setLastName(addUserRequest.getFirstName());
+        returnValue.setLastName(addUserRequest.getLastName());
         returnValue.setPhoneNumber(addUserRequest.getPhoneNumber());
         return returnValue;
     }

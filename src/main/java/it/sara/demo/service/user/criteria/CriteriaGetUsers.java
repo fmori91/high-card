@@ -18,7 +18,7 @@ public class CriteriaGetUsers extends GenericCriteria {
         BY_FIRSTNAME("by firstName"),
         BY_FIRSTNAME_DESC("by firstName desc"),
         BY_LASTNAME("by lastName"),
-        BY_LASTNAME_DESC("by lastName");
+        BY_LASTNAME_DESC("by lastName desc");
         private final String displayName;
 
         OrderType(String displayName) {
